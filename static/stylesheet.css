@@ -1,0 +1,359 @@
+@font-face {
+    font-family:PixelMplus10;
+    src:url("./PixelMplus10-Regular.ttf")
+}
+
+body.entrance{
+  background-image: url("./town1.gif");
+  background-size: contain;
+  height:100%;
+}
+
+body.town{
+    background-image: url("./town2.gif");
+    background-size: contain;
+    height:100%;
+}
+
+body.store{
+  background-image: url("./acew4-j426l.gif");
+  background-size: cover;
+  height:100%;
+}
+
+body.lake{
+  background-image: url("./aafle-0383f.gif");
+  background-size: cover;
+  height:100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 100px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+header {
+    width: 100%;
+    padding: 15px 0 0 0;
+    margin: 0 auto;
+    text-align: center;
+    background-color:rgba(255,255,255,0.5);
+}
+
+header .headline{
+    font-size: 4rem;
+}
+
+a.logout{
+  color: #fff;
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 30px;
+}
+
+div.login{
+  color: #fff;
+  font-size: 3rem;
+  text-align: center;
+  margin-right: auto;
+}
+
+ul.flashes{
+  text-align: center;
+  color: red;
+  font-size: 2rem;
+}
+
+.nav-list {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+.nav-list-item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.main{
+    text-align: center;
+    padding: 20px;
+}
+
+h2{
+    background-color: black;
+    color: #fff;
+    padding: inherit;
+    width: 50%;
+    margin: auto;
+    border: 2px solid white ;
+    table-layout: fixed;
+    word-wrap: break-word;
+    font-size: 2.5rem;
+}
+
+h2.logout{
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  width: 50%;
+  margin: 50px auto 50px auto;
+  border: 2px solid white ;
+  table-layout: fixed;
+  word-wrap: break-word;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2.result{
+    width: 30%;
+}
+
+.main2{
+    background-color:rgba(255,255,255,0.8);
+    color: rgb(0, 0, 0);
+    padding: inherit;
+    width: 400px;
+    margin: 20px auto 0px auto;
+    border: 5px double black;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+.main3{
+  background-color:rgba(255,255,255,0.8);
+  color: rgb(0, 0, 0);
+  padding: 50px;
+  width: 300px;
+  margin: 70px auto 0px auto;
+  border: 5px double black;
+  table-layout: fixed;
+  word-wrap: break-word;
+  font-size: 2rem;
+}
+
+.main4{
+  background-color:rgba(255,255,255,0.8);
+  color: rgb(0, 0, 0);
+  padding: inherit;
+  width: 70%;
+  margin: 20px auto 0px auto;
+  border: 5px double black;
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+.file_choose{
+    overflow: visible;
+    padding: 50px;
+}
+
+.originBtn input[type="file"] {
+    background-color: black;
+    font-size: 200%;
+    height: 10px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.originBtn {
+    color: black;
+    font-size: 2rem;
+    border: 1px solid;
+    display: inline-block;
+    padding: 8px 2em;
+    position: relative;
+    margin: 25px;
+}
+.originBtn:hover {
+    background-color: black;
+    color: blanchedalmond;
+    font-size: 2rem;
+    border: 1px solid;
+    display: inline-block;
+    padding: 8px 2em;
+    position: relative;
+}
+
+img {
+    display: block;
+    margin: 30px auto 30px auto;
+    width: 20%;
+    height: 20%;
+}
+
+.answer{
+    background-color: black;
+    color: #fff;
+    padding: inherit;
+    width: 45%;
+    margin: auto;
+    border: 2px solid white ;
+    table-layout: fixed;
+    word-wrap: break-word;
+    font-size: 200%;
+}
+
+.answer2{
+  background-color: black;
+  color: #fff;
+  padding: inherit;
+  width: 60%;
+  margin: auto;
+  border: 2px solid white ;
+  table-layout: fixed;
+  word-wrap: break-word;
+  font-size: 200%;
+}
+
+footer {
+    width: 100%;
+    height: 30px; 
+    text-align: center;
+    padding: 5px 0;
+    background-color: #1f1e1c;
+    font-size: 13px;
+    color: #fff;
+
+    position: absolute;/*←絶対位置*/
+    bottom: 0; /*下に固定*/
+}
+
+.footer-text {
+    color: #fff;
+}
+
+/***********************ボタン************************/
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin:0; 
+  padding:0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family:PixelMplus10;
+  height: 100%;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-border {
+  margin-bottom: 12px;
+  padding: 0;
+
+  -webkit-transition: all 0.3s;
+
+  transition: all 0.3s;
+
+  border-radius: 0;
+}
+
+a.btn-border span {
+  position: relative;
+
+  display: block;
+
+  padding: 1.25rem 3rem;
+
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+
+a.btn-border:before {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 14px;
+
+  content: "";
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+
+  border: 2px solid #000;
+  border-top: 1px solid #000;
+  border-radius: 0 0 0.5rem 0.5rem;
+  background-image: -webkit-repeating-linear-gradient(
+    135deg,
+    #000,
+    #000 1px,
+    transparent 2px,
+    transparent 5px
+  );
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #000,
+    #000 1px,
+    transparent 2px,
+    transparent 5px
+  );
+  background-size: 7px 7px;
+
+  -webkit-backface-visibility: hidden;
+
+  backface-visibility: hidden;
+}
+
+a.btn-border:hover {
+  -webkit-transform: translate(0, 3px);
+  transform: translate(0, 3px);
+}
+
+a.btn-border:hover:before {
+  bottom: -5px;
+}
+
+a.btn-border:active {
+  -webkit-transform: translate(0, 7px);
+  transform: translate(0, 7px);
+}
+
+a.btn-border:active:before {
+  bottom: -1px;
+}
+/***********************ボタン************************/

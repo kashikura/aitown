@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AIタウン</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+
+<body class="entrance">
+  <h2 class="logout">
+    入り口で警備員に止められた<br><br>
+    どうやら、名前と合言葉がいるようだ...
+  </h2>
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for category, message in messages %}
+      <li class="{{ category }}">{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+  <form action="/login" method="POST">
+    <div class="login">
+      <input type="username" name="username" placeholder="名前"><br />
+      <input type="password" name="password" placeholder="合言葉"><br />
+      <input type="submit" value="タウンへ入る">
+    </div>
+  </form>
+</body>

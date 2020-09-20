@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AIタウン</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body class="lake">
+    <div class="wrapper">
+        <header>
+            <h1 class="headline">
+              <a>AIタウン</a>
+            </h1>
+            <ul class="nav-list">
+              <li class="nav-list-item" >
+                <a href="./">タウンへ</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./dog_vs_cat">イヌネコ判別店</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./what_fruits">果物識別の湖</a>
+              </li>
+              <li class="nav-list-item">武器屋</li>
+              <li class="nav-list-item">宿屋</li>
+            </ul>
+          </header>
+        <div class="main">    
+            <h2 class="result">どの果物か分かったみたいだ</h2>
+            <div class="main4">
+                <img src="../{{ raw_img_url }}">
+                <div class="answer2">
+                ふむふむ　この果物はどうやら「{{answer}}」らしい<br><br>
+                {{answer}}の確率は...{{max_prob}}％か<br><br>
+                家に帰って食べるとしよう</div>
+                <br><br>
+                <a href="./what_fruits" class="originBtn">⬅︎ 別の画像を入れてみる</a>
+                <br><br>
+            </div>
+        </div>
+
+        <footer>
+            <p>All rights reserved by AI Town.</p>
+        </footer>
+    </div>
+</body>
+</html>

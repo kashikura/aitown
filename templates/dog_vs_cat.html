@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AIタウン</title>
+    <link rel="stylesheet" href="./static/stylesheet.css">
+</head>
+<body class="store">
+    <div class="wrapper">
+        <header>
+            <h1 class="headline">
+              <a>AIタウン</a>
+            </h1>
+            <ul class="nav-list">
+              <li class="nav-list-item" >
+                <a href="./">タウンへ</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./dog_vs_cat">イヌネコ判別店</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./what_fruits">果物識別の湖</a>
+              </li>
+              <li class="nav-list-item">武器屋</li>
+              <li class="nav-list-item">宿屋</li>
+            </ul>
+          </header>
+        <div class="main">    
+            <h2>いらっしゃい</br></br>うちでは　イヌかネコかを判別するよ</br></br>画像を選んで、ハンベツボタンを押してね</h2>
+            <div class="main2">
+                <form method="POST" enctype="multipart/form-data" action="dog_vs_cat">
+                    <div class="originBtn">
+                        画像を選ぶ
+                    <input class="file_choose" id="img" type="file" name="file">
+                    </div><br><br>
+                    <a class="btn btn-border"　href="javascript:void(0)" onclick="this.parentNode.submit()"><span>ハンベツ</span></a>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p>All rights reserved by AI Town.</p>
+        </footer>
+    </div>
+</body>
+</html>
